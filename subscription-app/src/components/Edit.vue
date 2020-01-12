@@ -16,6 +16,7 @@
                     Please provide a valid name.
                 </div>
             </div>
+            
             <div class="form-group">
                 <label for="currency">Currency</label>
                 <select

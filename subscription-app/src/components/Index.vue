@@ -1,3 +1,4 @@
+
 <template>
     <div class="pt-5">
         <div v-if="subscriptions && subscriptions.length">
@@ -17,10 +18,11 @@
                 </div>
             </div>
         </div>
-        <p  v-if="subscriptions.length == 0">No subscriptions</p>
+        <p  v-if="subscriptions.length == 0">No</p>
     </div>
 </template>
 <script>
+
 
 import axios from 'axios';
 
