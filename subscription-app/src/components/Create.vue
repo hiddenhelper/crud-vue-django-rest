@@ -49,9 +49,25 @@
                     Please provide a valid amount.
                 </div>
             </div>
-
             
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea
+                    name="description"
+                    class="form-control"
+                    id="description"
+                    v-validate="'required'"
+                    v-model="subscription.description"
+                    cols="30"
+                    rows="2"
+                    :class="{'is-invalid': errors.has('subscription.description') && submitted}"></textarea>
+                <div class="invalid-feedback">
+                    Please provide a valid description.
+                </div>
+            </div>
+
             <button type="submit" class="btn btn-primary">Submit</button>
+            
         </form>
     </div>
 </template>
